@@ -33,6 +33,8 @@
                 width: 700px;
                 margin: 20px auto;
                 padding: 20px;
+                margin-top: 0px;
+                padding-top: 0px;
                 border: 2px solid #555;
                 border-radius: 10px;
                 background-color: #1b1b1b;
@@ -116,7 +118,7 @@
                 transform: translateX(30px);
                 transition: 0.25s ease;
             }
-
+    
             .notification.show {
                 opacity: 1;
                 transform: translateX(0);
@@ -207,4 +209,9 @@
                 color: red;
                 background-color: rgba(100, 0, 0);
             }
-            #iframediv {width: 485px;height: 402px;border: 3px solid white;margin: auto;overflow: hidden;display: flex;justify-content: center;align-items: center;}
+            #centerthingy {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
