@@ -173,7 +173,6 @@ async function Setup(){
     const mb = (vram / 1024 / 1024).toFixed(0);
     document.getElementById("VRamLabel").innerHTML = "VRam (" + mb + " MB) :"
     document.getElementById("controls").style.display = "none"
-    document.getElementById("statebutton").style.display = "none"
 }
 
 async function HideSettings(){
@@ -366,6 +365,12 @@ async function WhichToStart(){
     const threads = document.getElementById("Threads").value
     const id = document.getElementById("gameid").value
     const canclick = document.getElementById("leftclick").value
+
+    if (!file) {return}
+
+    document.getElementById("settings").style.display = "none"
+    document.getElementById("SettingsLabel").style.display = "none"
+    document.getElementById("controlsiguess").style.display = "none"
 
     const pspbuttonmapping = {
             0: "space",
